@@ -1,0 +1,1 @@
+import ListaDeNoticias from "./ListaNoticias"
