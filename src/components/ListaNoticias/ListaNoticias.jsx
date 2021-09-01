@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Noticia from "../Noticia";
 import "./estilo.css";
-class ListaDeNoticias extends Component {
+class ListaNoticias extends Component {
  
   render() {
     return (
@@ -18,4 +18,4 @@ class ListaDeNoticias extends Component {
   }
 }
 
-export default ListaDeNoticias;
+export default ListaNoticias;

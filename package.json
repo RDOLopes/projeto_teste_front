@@ -7,8 +7,12 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
+    "react-datepicker": "^4.2.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-native-masked-text": "^1.13.0",
+    "react-native-text-input-mask": "file:node_modules/react-native-text-input-mask",
+    "react-scripts": "3.4.1",
+    "validator": "^13.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

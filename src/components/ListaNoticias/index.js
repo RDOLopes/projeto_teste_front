@@ -1,1 +1,2 @@
-import ListaDeNoticias from "./ListaNoticias"
+import ListaNoticias from "./ListaNoticias"
+export default ListaNoticias

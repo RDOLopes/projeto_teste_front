@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import "./estilo.css";
+import TableDatePicker from "../DataPublicacao/DataPublicacao";
+
+
 class FormularioCadastro extends Component {
 
   constructor(props){
     super(props);
     this.titulo ="";
     this.texto ="";
+    this.dataPublicacao="";
   }
 
   _handleMudancaTitulo(evento){
@@ -18,11 +22,7 @@ class FormularioCadastro extends Component {
     this.texto = evento.target.value;
   }
 
-  _handleMudancaDataPublicacao(evento){
-    evento.stopPropagation();
-    this.dataPublicacao = evento.target.value;
-  }
-
+ 
   _criarNoticia(evento){
     evento.preventDefault();
     evento.stopPropagation();
@@ -32,6 +32,8 @@ class FormularioCadastro extends Component {
 
   render() {
     return (
+
+      
       <form className="form-cadastro"
         onSubmit={this._criarNoticia.bind(this)}
       >
@@ -47,12 +49,7 @@ class FormularioCadastro extends Component {
           className="form-cadastro_input"
           onChange={this._handleMudancaTexto.bind(this)}
         />
-        <input
-          type="text"
-          placeholder="Data da publicação"
-          className="form-cadastro_input"
-          onChange={this._handleMudancaDataPublicacao.bind(this)}
-        />
+        <TableDatePicker />
         <button className="form-cadastro_input form-cadastro_submit">
           Criar noticia
         </button>

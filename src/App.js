@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ListaDeNoticias from "./components/ListaNoticias";
+import ListaNoticias from "./components/ListaNoticias";
 import FormularioCadastro from "./components/FormularioCadastro";
 import "./assets/App.css";
 import './assets/index.css';
@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <section className="conteudo">
         <FormularioCadastro criarNoticia={this.criarNoticia.bind(this)}/>
-        <ListaDeNoticias noticias={this.state.noticias}/>
+        <ListaNoticias noticias={this.state.noticias}/>
       </section>
     );
   }
